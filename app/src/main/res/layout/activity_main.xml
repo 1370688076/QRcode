@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cac.dad.qrcode.MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    >
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="扫描二维码"
+       android:id="@+id/button"
+       android:onClick="Scan"
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="result:"
+       android:textSize="25dp"
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:id="@+id/result"
+       />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+   <EditText
+       android:layout_width="260dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/ettext"
+       android:hint="请输入您想要的文字"
+       />
+   <CheckBox
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="logo"
+       android:layout_gravity="center"
+       android:id="@+id/check"
+       />
+   </LinearLayout>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="生成二维码"
+       android:onClick="make"
+
+       />
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/image"
+       android:layout_gravity="center"
+       android:background="@mipmap/ic_launcher"
+       />
+</LinearLayout>
